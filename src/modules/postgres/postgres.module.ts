@@ -22,19 +22,26 @@ import { Config, DatabaseConfig } from '../../configs/config.type';
           entities: [
             path.join(
               process.cwd(),
-              '**',
-              '*.entity.{ts,js}',
+              'dist',
+              'src',
+              'database',
+              'entities',
+              '*.entity.js',
             ),
           ],
           migrations: [
             path.join(
               process.cwd(),
-              '**',
-              '*.migration.{ts,js}',
+              'dist',
+              'src',
+              'database',
+              'migrations',
+              '*.js',
             ),
           ],
           synchronize: false,
         };
+
       },
       inject: [ConfigService],
     } as TypeOrmModuleAsyncOptions),

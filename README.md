@@ -20,6 +20,17 @@ $ yarn run start:dev
 # production mode
 $ yarn run start:prod
 ```
+## Migrations 
+
+```bash
+# generate migrations 
+$ name=add_base_entities yarn run migration:generate
+
+# run migrations
+$ yarn run migration:run
+```
+
+
 
 ## Stay in touch
 

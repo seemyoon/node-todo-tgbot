@@ -3,4 +3,5 @@ export enum TodoEnum {
   EDIT = 'Edit',
   DELETE = 'Delete ❌',
   COMPLETE = 'Complete ✅',
+  CREATE = 'Create',
 }

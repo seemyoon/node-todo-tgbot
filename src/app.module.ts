@@ -5,6 +5,7 @@ import { TelegrafCustomModule } from './modules/telegraf/telegraf.module';
 import { AppService } from './services/app.service';
 import { AppUpdate } from './services/app.update';
 import { PostgresModule } from './modules/postgres/postgres.module';
+import { RepositoryModule } from './modules/repository/repository.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { PostgresModule } from './modules/postgres/postgres.module';
     }),
     TelegrafCustomModule,
     PostgresModule,
+    RepositoryModule,
   ],
   controllers: [],
   providers: [AppService, AppUpdate],
